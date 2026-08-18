@@ -1,0 +1,110 @@
+.contact__inner {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact__heading {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.contact__sub {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-2);
+  max-width: 520px;
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__link-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  color: var(--color-text);
+  transition: all 0.3s ease;
+  max-width: 480px;
+}
+
+.contact__link-card:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+  transform: translateX(8px);
+  color: var(--color-white);
+}
+
+.contact__link-card > svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.contact__link-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+  margin-bottom: 3px;
+}
+
+.contact__link-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.contact__resume-btn {
+  align-self: flex-start;
+}
+
+/* Footer */
+.footer {
+  margin-top: 80px;
+  border-top: 1px solid var(--color-border-2);
+  padding: 40px 0 32px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.footer__name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  background: linear-gradient(135deg, var(--color-primary), #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--color-text-3);
+}
+
+.footer__copy {
+  font-size: 0.78rem;
+  color: var(--color-text-3);
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .contact__link-card { max-width: 100%; }
+}

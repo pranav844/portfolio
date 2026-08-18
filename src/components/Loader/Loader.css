@@ -1,0 +1,75 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: #050b18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, black 30%, transparent 100%);
+}
+
+.loader__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.loader__name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.loader__title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(0.65rem, 1.5vw, 0.8rem);
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  color: #00d4ff;
+  text-transform: uppercase;
+}
+
+.loader__bar-wrap {
+  width: 160px;
+  height: 1px;
+  background: rgba(0, 212, 255, 0.15);
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.loader__bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00d4ff, #7c3aed);
+  transform-origin: left center;
+}
+
+/* corner accents */
+.loader__corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-color: rgba(0, 212, 255, 0.3);
+  border-style: solid;
+}
+.loader__corner--tl { top: 24px; left: 24px; border-width: 1px 0 0 1px; }
+.loader__corner--tr { top: 24px; right: 24px; border-width: 1px 1px 0 0; }
+.loader__corner--bl { bottom: 24px; left: 24px; border-width: 0 0 1px 1px; }
+.loader__corner--br { bottom: 24px; right: 24px; border-width: 0 1px 1px 0; }

@@ -1,0 +1,230 @@
+.backend__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.backend__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.backend__panel {
+  padding: 32px;
+}
+
+.backend__panel-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.backend__panel-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--color-text-3);
+  letter-spacing: 0.04em;
+  margin-bottom: 28px;
+}
+
+/* MVC flow */
+.backend__flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.backend__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.backend__step-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  font-weight: 500;
+  flex-shrink: 0;
+  width: 24px;
+  margin-top: 12px;
+}
+
+.backend__step-content {
+  flex: 1;
+  padding: 12px 16px;
+  background: rgba(0, 212, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.08);
+  border-left: 2px solid rgba(0, 212, 255, 0.3);
+  border-radius: 0 8px 8px 0;
+  transition: border-color 0.25s, background 0.25s;
+  margin-bottom: 4px;
+}
+
+.backend__step-content:hover {
+  background: rgba(0, 212, 255, 0.06);
+  border-left-color: var(--color-primary);
+}
+
+.backend__step-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 3px;
+}
+
+.backend__step-desc {
+  font-size: 0.78rem;
+  color: var(--color-text-3);
+  line-height: 1.4;
+}
+
+.backend__step-arrow {
+  position: absolute;
+  left: 34px;
+  bottom: -2px;
+  color: rgba(0, 212, 255, 0.3);
+  font-size: 0.9rem;
+}
+
+/* API Flow */
+.api-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.api-flow__node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  background: rgba(0, 212, 255, 0.03);
+  width: 100%;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.api-flow__node:hover {
+  background: rgba(0, 212, 255, 0.07);
+  border-color: rgba(0, 212, 255, 0.25);
+}
+
+.api-flow__node--client { border-color: rgba(0, 212, 255, 0.25); }
+.api-flow__node--endpoint { border-color: rgba(124, 58, 237, 0.25); }
+.api-flow__node--security { border-color: rgba(239, 68, 68, 0.25); }
+.api-flow__node--token { border-color: rgba(245, 158, 11, 0.25); }
+.api-flow__node--db { border-color: rgba(16, 185, 129, 0.25); }
+
+.api-flow__label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 2px;
+}
+
+.api-flow__desc {
+  font-size: 0.7rem;
+  color: var(--color-text-3);
+}
+
+.api-flow__connector {
+  width: 1px;
+  height: 10px;
+  background: linear-gradient(to bottom, rgba(0,212,255,0.4), rgba(0,212,255,0.1));
+  transform-origin: top;
+}
+
+/* Mindset */
+.backend__principles {
+  padding: 28px;
+}
+
+.backend__mindset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.backend__principle {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.86rem;
+  color: var(--color-text-2);
+  line-height: 1.5;
+}
+
+.backend__principle-icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
+/* Build/Test cycle */
+.backend__cycle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 60px;
+  padding: 36px;
+  background: rgba(13, 22, 40, 0.4);
+  border: 1px solid var(--color-border-2);
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+
+.backend__cycle-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.backend__cycle-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.backend__cycle-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+}
+
+.backend__cycle-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.01em;
+}
+
+.backend__cycle-arrow {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  opacity: 0.5;
+  margin: 0 8px;
+}
+
+@media (max-width: 900px) {
+  .backend__grid { grid-template-columns: 1fr; }
+  .backend__cycle { gap: 16px; }
+}
