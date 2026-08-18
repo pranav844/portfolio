@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { personal } from '../../data/portfolio.js';
+import profileImg from '/public/profile.png';
 import './About.css';
 
 const traits = [
@@ -70,7 +71,7 @@ export default function About() {
             <div className="about__card glass-card">
               <div className="about__photo-wrap">
                 <img
-                  src="/portfolio/profile.png"
+                  src={profileImg}
                   alt="Pranav Saxena"
                   className="about__photo"
                   loading="lazy"
