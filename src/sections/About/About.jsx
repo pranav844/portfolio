@@ -101,7 +101,7 @@ export default function About() {
                   <span className="about__tc-highlight">Software Development</span>
                 </div>
                 <p className="about__tc-desc">
-                  Proof that determination > degree
+                  Proof that determination &gt; degree
                 </p>
               </div>
             </div>
