@@ -70,7 +70,7 @@ export default function About() {
             <div className="about__card glass-card">
               <div className="about__photo-wrap">
                 <img
-                  src="/profile.jpeg"
+                  src="/portfolio/profile.png"
                   alt="Pranav Saxena"
                   className="about__photo"
                   loading="lazy"
