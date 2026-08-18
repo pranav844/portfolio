@@ -7,7 +7,7 @@ export const personal = {
   email: 'saxenapranav844@gmail.com',
   github: 'https://github.com/pranav844',
   linkedin: 'https://www.linkedin.com/in/pranav-saxena-5726ab301',
-  resumeUrl: '/Pranav_Saxena_FullStack_Resume.pdf',
+  resumeUrl: `${import.meta.env.BASE_URL}Pranav_Saxena_FullStack_Resume.pdf`,
   phone: '+91 6261630062',
 };
 

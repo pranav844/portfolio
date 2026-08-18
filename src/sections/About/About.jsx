@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { personal } from '../../data/portfolio.js';
-import profileImg from '/public/profile.jpg';
+import profileImg from '../../assets/profile.jpg';
 import './About.css';
 
 const traits = [
